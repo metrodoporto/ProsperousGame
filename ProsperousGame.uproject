@@ -57,11 +57,6 @@
 			"Name": "TimeClock",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/6f6a4afb66af43deb946a48b78d8c80a"
-		},
-		{
-			"Name": "BlendImporter",
-			"Enabled": false,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/348ff3dbb80f491cad0d329753529b5e"
 		}
 	]
 }

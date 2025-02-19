@@ -2,6 +2,9 @@
 #include "Misc/App.h"
 #include "Misc/ConfigCacheIni.h" // Include this to use GConfig and GGameIni
 #include "Kismet/KismetMathLibrary.h"
+#include "Kismet/GameplayStatics.h"
+#include "Engine/World.h"
+#include "Engine/Level.h"
 
 FString UprosperousBlueprint::GetAppVersion()
 {
@@ -36,4 +39,14 @@ FString UprosperousBlueprint::GetRandomString(const TArray<FString>& StringArray
     }
 
     return "none";
+}
+
+bool UprosperousBlueprint::IsCurrentLevel(const UObject* WorldContextObject, TSoftObjectPtr<UWorld> LevelToCheck)
+{
+    UWorld* World = GEngine->GetWorldFromContextObjectChecked(WorldContextObject);
+    if (World && LevelToCheck.IsValid())
+    {
+        return World->GetCurrentLevel()->GetOuter() == LevelToCheck.Get();
+    }
+    return false;
 }

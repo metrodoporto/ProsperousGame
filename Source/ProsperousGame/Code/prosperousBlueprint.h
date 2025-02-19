@@ -18,4 +18,8 @@ public:
 
     UFUNCTION(BlueprintPure, meta = (DisplayName = "Get Random Element (String)", Category = "Get Random Element"))
     static FString GetRandomString(const TArray<FString>& StringArray);
+
+    UFUNCTION(BlueprintPure, meta = (DisplayName = "Is Current Level"), Category = "Game")
+    static bool IsCurrentLevel(const UObject* WorldContextObject, TSoftObjectPtr<UWorld> LevelToCheck);
+
 };

@@ -2,6 +2,7 @@
 
 #include "CoreMinimal.h"
 #include "Engine/Texture2D.h"
+#include "Materials/MaterialInterface.h"
 #include "Engine/Level.h"
 #include "LevelStruct.generated.h"
 
@@ -25,9 +26,13 @@ struct FLevelStruct
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Structure")
     UTexture2D* Texture;
 
+    // Material
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Structure")
+    UMaterialInterface* Material;
+
     // Default Constructor
     FLevelStruct()
-        : Name("Default"), LevelReference(nullptr), Texture(nullptr)
+        : Name("Default"), LevelReference(nullptr), Texture(nullptr), Material(nullptr)
     {
     }
 };

@@ -2,6 +2,7 @@
 
 #include "CoreMinimal.h"
 #include "Engine/Texture2D.h"
+#include "Materials/MaterialInterface.h"
 #include "prosperousLevelStruct.generated.h"
 
 
@@ -17,6 +18,7 @@ struct PROSPEROUSGAME_API FProsperousLevelStruct: public FTableRowBase
     UPROPERTY(EditAnywhere, BlueprintReadWrite)
     TSoftObjectPtr<UWorld> Level;
 
+    // Material
     UPROPERTY(EditAnywhere, BlueprintReadWrite)
-    UTexture2D* LevelTexture;
+    UMaterialInterface* LevelMaterial;
 };

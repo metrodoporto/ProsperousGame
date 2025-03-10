@@ -22,17 +22,13 @@ struct FLevelStruct
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Structure")
     TSoftObjectPtr<UWorld> LevelReference;
 
-    // Texture
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Structure")
-    UTexture2D* Texture;
-
     // Material
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Structure")
-    UMaterialInterface* Material;
+    UMaterial* LevelMaterial;
 
     // Default Constructor
     FLevelStruct()
-        : Name("Default"), LevelReference(nullptr), Texture(nullptr), Material(nullptr)
+        : Name("Default"), LevelReference(nullptr), LevelMaterial(nullptr)
     {
     }
 };

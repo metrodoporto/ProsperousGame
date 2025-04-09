@@ -195,3 +195,17 @@ void UsealTextWidget::CycleLoopCharacter()
         RichTextBlock->SetText(FText::FromString(CurrentText + LoopCharacter.ToString()));
     }
 }
+
+
+void UsealTextWidget::SetTypingSpeedMultiplier(bool bEnable)
+{
+    bTypingSpeedMultiplierEnabled = bEnable;
+    TypingSpeedMultiplier = bEnable ? 3.0f : 1.0f;
+
+    // Update the typing speed if the typing process is active
+    if (GetWorld()->GetTimerManager().IsTimerActive(TypingTimerHandle))
+    {
+        GetWorld()->GetTimerManager().ClearTimer(TypingTimerHandle);
+        GetWorld()->GetTimerManager().SetTimer(TypingTimerHandle, this, &UsealTextWidget::TypingUpdate, TypingSpeed / TypingSpeedMultiplier, true);
+    }
+}

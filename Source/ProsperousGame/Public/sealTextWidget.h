@@ -53,6 +53,9 @@ public:
     UPROPERTY(BlueprintAssignable, Category = "Typing")
     FOnTypingFinished OnTypingFinished;
 
+    UFUNCTION(BlueprintCallable, Category = "Typing")
+    void SetTypingSpeedMultiplier(bool bEnable);
+
 protected:
     virtual void NativeConstruct() override;
 
@@ -65,6 +68,9 @@ private:
     int32 CurrentIndex;
     int32 CurrentCycleIndex;
     bool bIsCursorVisible;
+
+    bool bTypingSpeedMultiplierEnabled;
+    float TypingSpeedMultiplier;
 
     FText LoopCharacter;
 

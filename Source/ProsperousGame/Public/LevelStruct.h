@@ -14,21 +14,32 @@ struct FLevelStruct
 {
     GENERATED_BODY()
 
-    // Name of the item
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Structure")
     FName Name;
 
-    // Level reference
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Structure")
     TSoftObjectPtr<UWorld> LevelReference;
 
-    // Material
+    // Use UMaterialInterface* for both materials and material instances
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Structure")
-    UMaterial* LevelMaterial;
+    UMaterialInterface* LevelMaterial;
 
-    // Default Constructor
+    // Use FText for localizable title
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Structure")
+    FText LevelTitle;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Structure")
+    FText LevelDescription;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Structure")
+    int32 LevelDifficulty;
+
     FLevelStruct()
-        : Name("Default"), LevelReference(nullptr), LevelMaterial(nullptr)
-    {
-    }
+        : Name("Default")
+        , LevelReference(nullptr)
+        , LevelMaterial(nullptr)
+        , LevelTitle(FText::FromString("O. Level Name"))
+        , LevelDescription(FText::FromString("Descrição do Nível"))
+        , LevelDifficulty(1)
+    {}
 };

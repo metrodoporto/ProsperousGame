@@ -50,3 +50,30 @@ bool UprosperousBlueprint::IsCurrentLevel(const UObject* WorldContextObject, TSo
     }
     return false;
 }
+
+FString UprosperousBlueprint::IntToRoman(int Number)
+{
+    if (Number <= 0 || Number > 3999)
+    {
+        return TEXT("Invalid Number");
+    }
+
+    TArray<TPair<int, FString>> RomanNumerals = {
+        {1000, TEXT("M")}, {900, TEXT("CM")}, {500, TEXT("D")}, {400, TEXT("CD")},
+        {100, TEXT("C")}, {90, TEXT("XC")}, {50, TEXT("L")}, {40, TEXT("XL")},
+        {10, TEXT("X")}, {9, TEXT("IX")}, {5, TEXT("V")}, {4, TEXT("IV")}, {1, TEXT("I")}
+    };
+
+    FString Result = TEXT("");
+
+    for (const TPair<int, FString>& Pair : RomanNumerals)
+    {
+        while (Number >= Pair.Key)
+        {
+            Result += Pair.Value;
+            Number -= Pair.Key;
+        }
+    }
+
+    return Result;
+}

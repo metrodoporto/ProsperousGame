@@ -22,4 +22,6 @@ public:
     UFUNCTION(BlueprintPure, meta = (DisplayName = "Is Current Level"), Category = "Game")
     static bool IsCurrentLevel(const UObject* WorldContextObject, TSoftObjectPtr<UWorld> LevelToCheck);
 
+	UFUNCTION(BlueprintPure, meta = (DisplayName = "Int to Roman"), Category = "Integer")
+	static FString IntToRoman(int Number);
 };

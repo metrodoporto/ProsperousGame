@@ -32,6 +32,9 @@ struct PROSPEROUSGAME_API FProsperousLevelStruct: public FTableRowBase
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Structure")
     int32 LevelDifficulty;
 
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Structure")
+    int32 LevelVariants;
+
 
     FProsperousLevelStruct()
         : Name("Default")
@@ -40,6 +43,7 @@ struct PROSPEROUSGAME_API FProsperousLevelStruct: public FTableRowBase
         , LevelTitle(FText::FromString("O. Level Name"))
         , LevelDescription(FText::FromString("Descrição do Nível"))
         , LevelDifficulty(1)
+        , LevelVariants(1)
     {
     }
 };

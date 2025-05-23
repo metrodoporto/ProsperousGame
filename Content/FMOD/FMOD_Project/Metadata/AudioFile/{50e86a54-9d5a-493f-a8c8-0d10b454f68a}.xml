@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{50e86a54-9d5a-493f-a8c8-0d10b454f68a}">
 		<property name="assetPath">
-			<value>PP Footsteps/Standart/STANDART FOOTSTEPS [JUMP-V2].wav</value>
+			<value>PP Footsteps/Standard/STANDART FOOTSTEPS [JUMP-V2].wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

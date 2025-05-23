@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{df7bbb17-f09f-4fec-b4ea-d7de2a771714}">
+		<property name="name">
+			<value>Surfaces</value>
+		</property>
+		<relationship name="folder">
+			<destination>{c58f304c-236f-43dc-8e32-7f80f76b608a}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{a0c2461a-7aad-4f26-bd19-877c3e53d3b1}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{a0c2461a-7aad-4f26-bd19-877c3e53d3b1}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>9</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>StandardWalk</value>
+			<value>MetalWalk</value>
+			<value>WoodWalk</value>
+			<value>StandartRun</value>
+			<value>MetalRun</value>
+			<value>WoodRun</value>
+			<value>StandartJump</value>
+			<value>MetalJump</value>
+			<value>WoodJump</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EncodableAsset" id="{175235e4-2390-4b7b-9386-2c3fe224cd61}">
+		<property name="color">
+			<value>Cyan Light 2</value>
+		</property>
+		<property name="assetPath">
+			<value>PP Footsteps/Wood/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{e41ef072-6322-42e2-afd5-24689c922b5f}</destination>
+		</relationship>
+	</object>
+</objects>

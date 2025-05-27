@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="ParameterPreset" id="{b0a0ddd3-33d8-499d-8df8-0246d9698bf4}">
 		<property name="name">
-			<value>Levels</value>
+			<value>Level</value>
 		</property>
 		<relationship name="folder">
 			<destination>{18fdbeb8-d4e8-4b3b-bc16-2b6747fe7e43}</destination>
@@ -24,9 +24,6 @@
 			<value>Documentary</value>
 			<value>News</value>
 			<value>Music</value>
-		</property>
-		<property name="isGlobal">
-			<value>true</value>
 		</property>
 		<property name="initialValue">
 			<value>0</value>

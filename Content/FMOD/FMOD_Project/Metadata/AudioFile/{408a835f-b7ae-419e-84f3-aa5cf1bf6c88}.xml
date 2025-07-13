@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{408a835f-b7ae-419e-84f3-aa5cf1bf6c88}">
+		<property name="assetPath">
+			<value>MUSIC/Cat's Out of the Bag-wip4.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>90.827755102040811</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{e41ef072-6322-42e2-afd5-24689c922b5f}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{67a00ee7-1a5d-439d-a8b1-fb19c698374b}">
+		<property name="assetPath">
+			<value>MUSIC/Runnaway Building-wip3.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>59.141224489795917</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{e41ef072-6322-42e2-afd5-24689c922b5f}</destination>
+		</relationship>
+	</object>
+</objects>

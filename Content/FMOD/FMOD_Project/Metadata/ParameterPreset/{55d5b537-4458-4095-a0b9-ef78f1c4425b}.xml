@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="ParameterPreset" id="{55d5b537-4458-4095-a0b9-ef78f1c4425b}">
 		<property name="name">
-			<value>Music Volume</value>
+			<value>Master</value>
 		</property>
 		<relationship name="folder">
 			<destination>{c58f304c-236f-43dc-8e32-7f80f76b608a}</destination>
